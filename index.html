@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growth and Changes in Plants! - Grade 3 Science</title>
+    <title>Living Things! - Grade 3 Science</title>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka:wght@400;600;700&family=Chewy&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -15,12 +15,11 @@
             --orange: #FF9F1C;
             --teal: #06FFA5;
             --red: #EF476F;
-            --lime: #84CC16;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Fredoka', sans-serif;
-            background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
             color: #2D3748;
             overflow-x: hidden;
         }
@@ -32,9 +31,9 @@
             animation: float 20s infinite ease-in-out;
         }
         .shape:nth-child(1) { width: 100px; height: 100px; background: var(--green); top: 10%; left: 10%; animation-delay: 0s; }
-        .shape:nth-child(2) { width: 150px; height: 150px; background: var(--lime); top: 50%; left: 70%; animation-delay: 5s; }
-        .shape:nth-child(3) { width: 80px; height: 80px; background: var(--yellow); top: 70%; left: 20%; animation-delay: 10s; }
-        .shape:nth-child(4) { width: 120px; height: 120px; background: var(--teal); top: 30%; left: 80%; animation-delay: 15s; }
+        .shape:nth-child(2) { width: 150px; height: 150px; background: var(--blue); top: 50%; left: 70%; animation-delay: 5s; }
+        .shape:nth-child(3) { width: 80px; height: 80px; background: var(--pink); top: 70%; left: 20%; animation-delay: 10s; }
+        .shape:nth-child(4) { width: 120px; height: 120px; background: var(--yellow); top: 30%; left: 80%; animation-delay: 15s; }
         @keyframes float {
             0%, 100% { transform: translate(0, 0) rotate(0deg); }
             25% { transform: translate(30px, -30px) rotate(90deg); }
@@ -42,16 +41,16 @@
             75% { transform: translate(-30px, -30px) rotate(270deg); }
         }
         header {
-            background: linear-gradient(135deg, var(--lime) 0%, var(--green) 50%, var(--teal) 100%);
+            background: linear-gradient(135deg, var(--green) 0%, #4CAF50 50%, var(--teal) 100%);
             padding: 3rem 2rem; text-align: center; position: relative;
             box-shadow: 0 10px 40px rgba(0,0,0,0.2); overflow: hidden;
         }
         header::before {
-            content: '🌻'; position: absolute; font-size: 10rem; opacity: 0.15;
+            content: '🌱'; position: absolute; font-size: 10rem; opacity: 0.15;
             top: -20px; left: 5%; animation: bounce 3s infinite;
         }
         header::after {
-            content: '🌱'; position: absolute; font-size: 10rem; opacity: 0.15;
+            content: '🦋'; position: absolute; font-size: 10rem; opacity: 0.15;
             top: -20px; right: 5%; animation: bounce 3s infinite 1.5s;
         }
         @keyframes bounce {
@@ -60,7 +59,7 @@
         }
         h1 {
             font-family: 'Bubblegum Sans', cursive; font-size: 4rem; color: white;
-            text-shadow: 4px 4px 0 var(--green), 8px 8px 0 var(--lime), 12px 12px 30px rgba(0,0,0,0.3);
+            text-shadow: 4px 4px 0 var(--green), 8px 8px 0 var(--teal), 12px 12px 30px rgba(0,0,0,0.3);
             margin-bottom: 1rem; animation: wiggle 2s ease-in-out infinite;
         }
         @keyframes wiggle {
@@ -74,18 +73,18 @@
         nav {
             background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);
             padding: 1.5rem; box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-            position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--lime);
+            position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--green);
             transition: all 0.3s;
         }
         nav.hidden { display: none; }
         .nav-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 1rem; max-width: 1600px; margin: 0 auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem; max-width: 1400px; margin: 0 auto;
         }
         .nav-btn {
-            background: linear-gradient(135deg, var(--lime), var(--green));
+            background: linear-gradient(135deg, var(--green), #4CAF50);
             color: white; border: none; padding: 1.2rem; border-radius: 20px;
-            font-family: 'Fredoka', sans-serif; font-size: 0.95rem; font-weight: 700;
+            font-family: 'Fredoka', sans-serif; font-size: 1rem; font-weight: 700;
             cursor: pointer; transition: all 0.3s; box-shadow: 0 6px 0 rgba(0,0,0,0.2);
             text-transform: uppercase;
         }
@@ -101,13 +100,13 @@
         }
         .back-button {
             display: none; position: fixed; top: 20px; left: 20px; z-index: 101;
-            background: linear-gradient(135deg, var(--lime), var(--green));
+            background: linear-gradient(135deg, var(--green), var(--teal));
             color: white; border: none; padding: 1rem 2rem; border-radius: 15px;
             font-family: 'Fredoka', sans-serif; font-size: 1.2rem; font-weight: 700;
-            cursor: pointer; box-shadow: 0 8px 20px rgba(132, 204, 22, 0.4);
+            cursor: pointer; box-shadow: 0 8px 20px rgba(107, 207, 127, 0.4);
             transition: all 0.3s;
         }
-        .back-button:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 12px 30px rgba(132, 204, 22, 0.6); }
+        .back-button:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 12px 30px rgba(107, 207, 127, 0.6); }
         .back-button.show { display: block; animation: slideInLeft 0.5s; }
         @keyframes slideInLeft {
             from { opacity: 0; transform: translateX(-50px); }
@@ -129,11 +128,11 @@
         }
         .card h2 {
             font-family: 'Bubblegum Sans', cursive; font-size: 3rem; margin-bottom: 1.5rem;
-            color: var(--lime); text-shadow: 3px 3px 0 var(--yellow);
+            color: var(--green); text-shadow: 3px 3px 0 var(--yellow);
         }
         .card h3 {
             font-family: 'Chewy', cursive; font-size: 2.2rem; margin: 2rem 0 1.5rem;
-            color: var(--green);
+            color: var(--purple);
         }
         .card p, .card li {
             font-size: 1.3rem; line-height: 1.8; margin-bottom: 1rem; font-weight: 500;
@@ -184,7 +183,7 @@
         }
         .question {
             background: white; border-radius: 20px; padding: 2rem; margin: 1.5rem 0;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1); border-left: 8px solid var(--lime);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1); border-left: 8px solid var(--green);
         }
         .question h4 { font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 700; }
         .options { display: flex; flex-direction: column; gap: 1rem; }
@@ -194,10 +193,10 @@
         }
         .option:hover {
             background: #E5E7EB; transform: translateX(10px) scale(1.02);
-            border-color: var(--lime);
+            border-color: var(--green);
         }
         .option.selected {
-            border-color: var(--lime); background: #DBEAFE; transform: translateX(10px);
+            border-color: var(--green); background: #DBEAFE; transform: translateX(10px);
         }
         .option.correct {
             border-color: var(--green); background: #D1FAE5; animation: correctBounce 0.6s;
@@ -232,10 +231,10 @@
         .score-display {
             background: white; padding: 3rem; border-radius: 20px; text-align: center;
             font-size: 2rem; font-weight: 800; margin-top: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 5px solid var(--lime);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 5px solid var(--green);
         }
         .btn {
-            background: linear-gradient(135deg, var(--lime), var(--green));
+            background: linear-gradient(135deg, var(--green), #059669);
             color: white; border: none; padding: 1.5rem 3rem; border-radius: 20px;
             font-family: 'Fredoka', sans-serif; font-size: 1.3rem; font-weight: 700;
             cursor: pointer; transition: all 0.3s; box-shadow: 0 8px 0 rgba(0,0,0,0.2);
@@ -243,29 +242,29 @@
         }
         .btn:hover { transform: translateY(-6px); box-shadow: 0 12px 0 rgba(0,0,0,0.2); }
         .btn:active { transform: translateY(-2px); box-shadow: 0 5px 0 rgba(0,0,0,0.2); }
-        .btn-check { background: linear-gradient(135deg, var(--lime), var(--green)); }
+        .btn-check { background: linear-gradient(135deg, var(--green), #4CAF50); }
         .btn-reset { background: linear-gradient(135deg, var(--orange), var(--yellow)); }
         .btn-audio { background: linear-gradient(135deg, var(--purple), var(--pink)); }
         .button-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 2rem 0; }
         .drag-item {
             background: white; padding: 1.5rem; border-radius: 15px; cursor: move;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15); border: 4px solid var(--lime);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15); border: 4px solid var(--green);
             font-size: 1.2rem; text-align: center; font-weight: 700;
             transition: all 0.3s; margin: 0.8rem; display: inline-block;
         }
         .drag-item:hover { transform: rotate(-5deg) scale(1.05); box-shadow: 0 10px 25px rgba(0,0,0,0.25); }
         .drop-zone {
-            background: rgba(132, 204, 22, 0.1); border: 5px dashed var(--lime);
+            background: rgba(107, 207, 127, 0.1); border: 5px dashed var(--green);
             border-radius: 20px; padding: 2.5rem; min-height: 180px; margin: 1.5rem 0;
             display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;
             justify-content: center; transition: all 0.3s;
         }
         .drop-zone.drag-over {
-            background: rgba(132, 204, 22, 0.3); transform: scale(1.02);
+            background: rgba(107, 207, 127, 0.3); transform: scale(1.02);
             border-color: var(--pink);
         }
         input[type="text"] {
-            border: 3px solid var(--lime); padding: 0.8rem; font-size: 1.2rem;
+            border: 3px solid var(--green); padding: 0.8rem; font-size: 1.2rem;
             border-radius: 10px; font-family: 'Fredoka', sans-serif; font-weight: 700;
             transition: all 0.3s;
         }
@@ -274,20 +273,20 @@
             box-shadow: 0 0 10px rgba(255, 107, 157, 0.3);
         }
         .home-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2.5rem; margin: 3rem 0;
         }
         .topic-card {
-            background: white; border-radius: 25px; padding: 2.5rem; text-align: center;
+            background: white; border-radius: 25px; padding: 3rem; text-align: center;
             box-shadow: 0 15px 40px rgba(0,0,0,0.2); cursor: pointer;
             transition: all 0.4s; border: 6px solid; position: relative;
         }
         .topic-card:hover {
             transform: translateY(-20px) scale(1.05); box-shadow: 0 25px 60px rgba(0,0,0,0.3);
         }
-        .topic-card .icon { font-size: 5rem; margin-bottom: 1rem; }
-        .topic-card h3 { margin: 1rem 0; font-size: 1.5rem; }
-        .topic-card p { font-size: 1.1rem; }
+        .topic-card .icon { font-size: 6rem; margin-bottom: 1.5rem; }
+        .topic-card h3 { margin: 1rem 0; font-size: 1.7rem; }
+        .topic-card p { font-size: 1.2rem; }
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             .subtitle { font-size: 1.5rem; }
@@ -307,24 +306,19 @@
     </div>
 
     <header>
-        <h1>🌻 Growth & Changes in Plants! 🌱</h1>
-        <p class="subtitle">Discover the Amazing World of Plants!</p>
+        <h1>🌱 Living Things! 🦋</h1>
+        <p class="subtitle">Discover the Amazing World of Life!</p>
     </header>
 
     <nav>
         <div class="nav-grid">
             <button class="nav-btn active" onclick="showPage('home', event)">🏠 Home</button>
-            <button class="nav-btn" onclick="showPage('b11', event)">B1.1 - Importance</button>
-            <button class="nav-btn" onclick="showPage('b12', event)">B1.2 - Human Impact</button>
-            <button class="nav-btn" onclick="showPage('b13', event)">B1.3 - Local Food</button>
             <button class="nav-btn" onclick="showPage('b21', event)">B2.1 - Basic Needs</button>
-            <button class="nav-btn" onclick="showPage('b22', event)">B2.2 - Plant Parts</button>
-            <button class="nav-btn" onclick="showPage('b23', event)">B2.3 - Life Cycles</button>
+            <button class="nav-btn" onclick="showPage('b22', event)">B2.2 - Characteristics</button>
+            <button class="nav-btn" onclick="showPage('b23', event)">B2.3 - Plants & Animals</button>
             <button class="nav-btn" onclick="showPage('b24', event)">B2.4 - Adaptations</button>
-            <button class="nav-btn" onclick="showPage('b25', event)">B2.5 - Photosynthesis</button>
-            <button class="nav-btn" onclick="showPage('b26', event)">B2.6 - Cultural Uses</button>
-            <button class="nav-btn" onclick="showPage('b27', event)">B2.7 - Plants for Food</button>
-            <button class="nav-btn" onclick="showPage('b28', event)">B2.8 - Interdependence</button>
+            <button class="nav-btn" onclick="showPage('b25', event)">B2.5 - Interdependence</button>
+            <button class="nav-btn" onclick="showPage('b26', event)">B2.6 - Human Impact</button>
         </div>
     </nav>
 
@@ -334,590 +328,52 @@
 
     <div class="container">
         <div id="home" class="page active">
-            <div class="card" style="border-color: var(--lime);">
-                <h2>Welcome, Young Botanists! 🎉</h2>
-                <p>Get ready to explore the amazing world of PLANTS! You'll discover how plants grow, what they need to survive, and how they help us every day!</p>
-                <p>Click on any topic below to start your green adventure. Let's learn about plants! 🌱</p>
+            <div class="card" style="border-color: var(--green);">
+                <h2>Welcome, Young Biologists! 🎉</h2>
+                <p>Get ready to explore the incredible world of LIVING THINGS! You'll discover what all living things need, how they grow and change, and how they depend on each other!</p>
+                <p>Click on any topic below to start your adventure. Let's learn about life! 🌱</p>
             </div>
 
             <div class="home-grid">
-                <div class="topic-card" style="border-color: var(--green);" onclick="showPage('b11', event)">
-                    <div class="icon">🌍</div>
-                    <h3>Importance of Plants</h3>
-                    <p>Why plants matter!</p>
-                </div>
-                <div class="topic-card" style="border-color: var(--orange);" onclick="showPage('b12', event)">
-                    <div class="icon">👷</div>
-                    <h3>Human Impact</h3>
-                    <p>How we affect plants!</p>
-                </div>
-                <div class="topic-card" style="border-color: var(--yellow);" onclick="showPage('b13', event)">
-                    <div class="icon">🥕</div>
-                    <h3>Local Food</h3>
-                    <p>Growing food nearby!</p>
-                </div>
-                <div class="topic-card" style="border-color: var(--blue);" onclick="showPage('b21', event)">
-                    <div class="icon">💧</div>
+                <div class="topic-card" style="border-color: var(--green);" onclick="showPage('b21', event)">
+                    <div class="icon">🍎</div>
                     <h3>Basic Needs</h3>
-                    <p>What plants need!</p>
+                    <p>What all living things need!</p>
                 </div>
-                <div class="topic-card" style="border-color: var(--green);" onclick="showPage('b22', event)">
-                    <div class="icon">🌿</div>
-                    <h3>Plant Parts</h3>
-                    <p>Leaves, roots, stems!</p>
-                </div>
-                <div class="topic-card" style="border-color: var(--lime);" onclick="showPage('b23', event)">
+                <div class="topic-card" style="border-color: var(--blue);" onclick="showPage('b22', event)">
                     <div class="icon">🌱</div>
-                    <h3>Life Cycles</h3>
-                    <p>How plants grow!</p>
+                    <h3>Characteristics</h3>
+                    <p>What makes something alive!</p>
+                </div>
+                <div class="topic-card" style="border-color: var(--pink);" onclick="showPage('b23', event)">
+                    <div class="icon">🦋</div>
+                    <h3>Plants & Animals</h3>
+                    <p>Two types of life!</p>
                 </div>
                 <div class="topic-card" style="border-color: var(--orange);" onclick="showPage('b24', event)">
-                    <div class="icon">🌵</div>
+                    <div class="icon">🦎</div>
                     <h3>Adaptations</h3>
-                    <p>Surviving environments!</p>
+                    <p>How living things survive!</p>
                 </div>
-                <div class="topic-card" style="border-color: var(--yellow);" onclick="showPage('b25', event)">
-                    <div class="icon">☀️</div>
-                    <h3>Photosynthesis</h3>
-                    <p>Making food from sun!</p>
-                </div>
-                <div class="topic-card" style="border-color: var(--purple);" onclick="showPage('b26', event)">
-                    <div class="icon">🏺</div>
-                    <h3>Cultural Uses</h3>
-                    <p>Plants around the world!</p>
-                </div>
-                <div class="topic-card" style="border-color: var(--red);" onclick="showPage('b27', event)">
-                    <div class="icon">🍎</div>
-                    <h3>Plants for Food</h3>
-                    <p>What we eat!</p>
-                </div>
-                <div class="topic-card" style="border-color: var(--teal);" onclick="showPage('b28', event)">
-                    <div class="icon">🤝</div>
+                <div class="topic-card" style="border-color: var(--purple);" onclick="showPage('b25', event)">
+                    <div class="icon">🌍</div>
                     <h3>Interdependence</h3>
-                    <p>Working together!</p>
+                    <p>How life depends on life!</p>
+                </div>
+                <div class="topic-card" style="border-color: var(--teal);" onclick="showPage('b26', event)">
+                    <div class="icon">♻️</div>
+                    <h3>Human Impact</h3>
+                    <p>How we affect living things!</p>
                 </div>
             </div>
         </div>
 
-
-        <!-- B1.1 PAGE -->
-        <div id="b11" class="page">
-            <div class="card" style="border-color: var(--green);">
-                <h2>B1.1 - Importance of Plants 🌍</h2>
-                <p>Plants are <strong>essential to all life on Earth</strong>! They help humans, animals, and the environment in so many ways!</p>
-                
-                <div class="audio-controls">
-                    <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b11">
-                        🔊 Read This Page Aloud
-                    </button>
-                    <button class="btn btn-reset" onclick="stopReading()" id="stopBtn-b11" style="display: none;">
-                        ⏸️ Stop Reading
-                    </button>
-                </div>
-
-
-                <h3>Why Plants Are Important 🌟</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🌳</div>
-                        <h4>Clean Air</h4>
-                        <p>Make oxygen we breathe!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🍎</div>
-                        <h4>Provide Food</h4>
-                        <p>Fruits, veggies, grains!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🏠</div>
-                        <h4>Give Shelter</h4>
-                        <p>Homes for animals!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🌡️</div>
-                        <h4>Cool Climate</h4>
-                        <p>Shade and temperature!</p>
-                    </div>
-                </div>
-
-                <h3>Benefits for Humans 👥</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">💊</div>
-                        <h4>Medicine</h4>
-                        <p>Many drugs from plants!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🪵</div>
-                        <h4>Building Materials</h4>
-                        <p>Wood for homes!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">👕</div>
-                        <h4>Clothing</h4>
-                        <p>Cotton and fabrics!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">😊</div>
-                        <h4>Beauty & Joy</h4>
-                        <p>Gardens make us happy!</p>
-                    </div>
-                </div>
-
-                <div class="activity-box">
-                    <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
-                    
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b11-drag-items">
-                        <div class="drag-item" draggable="true" data-category="benefit">🌳 Making oxygen</div>
-                        <div class="drag-item" draggable="true" data-category="benefit">🍎 Growing food</div>
-                        <div class="drag-item" draggable="true" data-category="benefit">🏠 Providing homes</div>
-                        <div class="drag-item" draggable="true" data-category="benefit">💊 Creating medicine</div>
-                        <div class="drag-item" draggable="true" data-category="notbenefit">🎮 Video games</div>
-                        <div class="drag-item" draggable="true" data-category="notbenefit">🚗 Cars</div>
-                        <div class="drag-item" draggable="true" data-category="notbenefit">📺 Television</div>
-                        <div class="drag-item" draggable="true" data-category="notbenefit">💰 Money</div>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">NOTBENEFIT</h4>
-                            <div class="drop-zone" data-category="notbenefit"></div>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">BENEFIT</h4>
-                            <div class="drop-zone" data-category="benefit"></div>
-                        </div>
-                    </div>
-
-                    <div class="button-group">
-                        <button class="btn btn-check" onclick="checkB11DragDrop()">Check Sorting!</button>
-                        <button class="btn btn-reset" onclick="resetB11DragDrop()">Reset</button>
-                    </div>
-                    <div id="b11-drag-feedback" class="feedback"></div>
-                </div>
-
-                <div class="activity-box" style="background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); border-color: var(--blue);">
-                    <h3>🎯 Activity 2: Fill in the Blanks!</h3>
-                    
-                    <div id="b11-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b11-blank1" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b11-blank2" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b11-blank3" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b11-blank4" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b11-blank5" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b11-blank6" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b11-blank7" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b11-blank8" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b11-blank9" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b11-blank10" style="width: 200px;">.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-check" onclick="checkB11FillBlanks()">Check Answers!</button>
-                    <div id="b11-fillblank-feedback" class="feedback"></div>
-                </div>
-
-                <div class="quiz-box">
-                    <h3>📝 Quiz Time!</h3>
-                    <div id="b11-quiz"></div>
-                    <button class="btn btn-check" onclick="checkQuiz('b11')" style="margin-top: 1.5rem;">Submit Quiz</button>
-                    <div id="b11-quiz-score" class="score-display" style="display: none;"></div>
-                </div>
-
-                <div style="text-align: center;">
-                    <button class="back-button bottom-back-button" onclick="showPage('home', event)">
-                        ← Back to Lessons
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- B1.2 PAGE -->
-        <div id="b12" class="page">
-            <div class="card" style="border-color: var(--orange);">
-                <h2>B1.2 - Human Impact on Plants 👷</h2>
-                <p>Human activities can <strong>harm or help</strong> plants! We can make choices to protect them!</p>
-                
-                <div class="audio-controls">
-                    <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b12">
-                        🔊 Read This Page Aloud
-                    </button>
-                    <button class="btn btn-reset" onclick="stopReading()" id="stopBtn-b12" style="display: none;">
-                        ⏸️ Stop Reading
-                    </button>
-                </div>
-
-
-                <h3>Harmful Impacts ⚠️</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🪓</div>
-                        <h4>Deforestation</h4>
-                        <p>Cutting down forests!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🏭</div>
-                        <h4>Pollution</h4>
-                        <p>Dirty air and water!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🏗️</div>
-                        <h4>Urbanization</h4>
-                        <p>Building on habitats!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🌡️</div>
-                        <h4>Climate Change</h4>
-                        <p>Changing temperatures!</p>
-                    </div>
-                </div>
-
-                <h3>Helpful Actions ✅</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🌳</div>
-                        <h4>Planting Trees</h4>
-                        <p>Restore forests!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">♻️</div>
-                        <h4>Reduce Waste</h4>
-                        <p>Less pollution!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🌿</div>
-                        <h4>Native Gardens</h4>
-                        <p>Help local species!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🚫</div>
-                        <h4>Stop Over-picking</h4>
-                        <p>Leave plants to grow!</p>
-                    </div>
-                </div>
-
-                <div class="activity-box">
-                    <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
-                    
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b12-drag-items">
-                        <div class="drag-item" draggable="true" data-category="harmful">🪓 Cutting forests</div>
-                        <div class="drag-item" draggable="true" data-category="harmful">🏭 Factory pollution</div>
-                        <div class="drag-item" draggable="true" data-category="harmful">🗑️ Littering</div>
-                        <div class="drag-item" draggable="true" data-category="harmful">🔥 Forest fires</div>
-                        <div class="drag-item" draggable="true" data-category="helpful">🌳 Planting trees</div>
-                        <div class="drag-item" draggable="true" data-category="helpful">♻️ Recycling</div>
-                        <div class="drag-item" draggable="true" data-category="helpful">🌿 Making gardens</div>
-                        <div class="drag-item" draggable="true" data-category="helpful">💧 Conserving water</div>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">HARMFUL</h4>
-                            <div class="drop-zone" data-category="harmful"></div>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">HELPFUL</h4>
-                            <div class="drop-zone" data-category="helpful"></div>
-                        </div>
-                    </div>
-
-                    <div class="button-group">
-                        <button class="btn btn-check" onclick="checkB12DragDrop()">Check Sorting!</button>
-                        <button class="btn btn-reset" onclick="resetB12DragDrop()">Reset</button>
-                    </div>
-                    <div id="b12-drag-feedback" class="feedback"></div>
-                </div>
-
-                <div class="activity-box" style="background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); border-color: var(--blue);">
-                    <h3>🎯 Activity 2: Fill in the Blanks!</h3>
-                    
-                    <div id="b12-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b12-blank1" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b12-blank2" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b12-blank3" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b12-blank4" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b12-blank5" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b12-blank6" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b12-blank7" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b12-blank8" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b12-blank9" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b12-blank10" style="width: 200px;">.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-check" onclick="checkB12FillBlanks()">Check Answers!</button>
-                    <div id="b12-fillblank-feedback" class="feedback"></div>
-                </div>
-
-                <div class="quiz-box">
-                    <h3>📝 Quiz Time!</h3>
-                    <div id="b12-quiz"></div>
-                    <button class="btn btn-check" onclick="checkQuiz('b12')" style="margin-top: 1.5rem;">Submit Quiz</button>
-                    <div id="b12-quiz-score" class="score-display" style="display: none;"></div>
-                </div>
-
-                <div style="text-align: center;">
-                    <button class="back-button bottom-back-button" onclick="showPage('home', event)">
-                        ← Back to Lessons
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- B1.3 PAGE -->
-        <div id="b13" class="page">
-            <div class="card" style="border-color: var(--yellow);">
-                <h2>B1.3 - Locally Grown Food 🥕</h2>
-                <p><strong>Locally grown food</strong> is food grown near where you live! It has benefits and some challenges!</p>
-                
-                <div class="audio-controls">
-                    <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b13">
-                        🔊 Read This Page Aloud
-                    </button>
-                    <button class="btn btn-reset" onclick="stopReading()" id="stopBtn-b13" style="display: none;">
-                        ⏸️ Stop Reading
-                    </button>
-                </div>
-
-
-                <h3>Benefits of Local Food ✅</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🚜</div>
-                        <h4>Fresher Food</h4>
-                        <p>Picked recently!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🌍</div>
-                        <h4>Less Pollution</h4>
-                        <p>Less transport!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">💚</div>
-                        <h4>Supports Farmers</h4>
-                        <p>Helps community!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🍎</div>
-                        <h4>Better Taste</h4>
-                        <p>Ripens naturally!</p>
-                    </div>
-                </div>
-
-                <h3>Limitations ⚠️</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">❄️</div>
-                        <h4>Seasonal</h4>
-                        <p>Not year-round!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">💰</div>
-                        <h4>Can Cost More</h4>
-                        <p>Sometimes pricier!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🍊</div>
-                        <h4>Less Variety</h4>
-                        <p>Only local crops!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">☀️</div>
-                        <h4>Weather Dependent</h4>
-                        <p>Crops can fail!</p>
-                    </div>
-                </div>
-
-                <div class="activity-box">
-                    <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
-                    
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b13-drag-items">
-                        <div class="drag-item" draggable="true" data-category="benefit">🚜 Very fresh</div>
-                        <div class="drag-item" draggable="true" data-category="benefit">🌍 Less travel</div>
-                        <div class="drag-item" draggable="true" data-category="benefit">💚 Helps local farms</div>
-                        <div class="drag-item" draggable="true" data-category="benefit">🍎 Tastes better</div>
-                        <div class="drag-item" draggable="true" data-category="limitation">❄️ Only in season</div>
-                        <div class="drag-item" draggable="true" data-category="limitation">💰 May cost more</div>
-                        <div class="drag-item" draggable="true" data-category="limitation">🍊 Less selection</div>
-                        <div class="drag-item" draggable="true" data-category="limitation">☀️ Weather affects it</div>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">LIMITATION</h4>
-                            <div class="drop-zone" data-category="limitation"></div>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">BENEFIT</h4>
-                            <div class="drop-zone" data-category="benefit"></div>
-                        </div>
-                    </div>
-
-                    <div class="button-group">
-                        <button class="btn btn-check" onclick="checkB13DragDrop()">Check Sorting!</button>
-                        <button class="btn btn-reset" onclick="resetB13DragDrop()">Reset</button>
-                    </div>
-                    <div id="b13-drag-feedback" class="feedback"></div>
-                </div>
-
-                <div class="activity-box" style="background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); border-color: var(--blue);">
-                    <h3>🎯 Activity 2: Fill in the Blanks!</h3>
-                    
-                    <div id="b13-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b13-blank1" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b13-blank2" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b13-blank3" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b13-blank4" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b13-blank5" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b13-blank6" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b13-blank7" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b13-blank8" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b13-blank9" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b13-blank10" style="width: 200px;">.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-check" onclick="checkB13FillBlanks()">Check Answers!</button>
-                    <div id="b13-fillblank-feedback" class="feedback"></div>
-                </div>
-
-                <div class="quiz-box">
-                    <h3>📝 Quiz Time!</h3>
-                    <div id="b13-quiz"></div>
-                    <button class="btn btn-check" onclick="checkQuiz('b13')" style="margin-top: 1.5rem;">Submit Quiz</button>
-                    <div id="b13-quiz-score" class="score-display" style="display: none;"></div>
-                </div>
-
-                <div style="text-align: center;">
-                    <button class="back-button bottom-back-button" onclick="showPage('home', event)">
-                        ← Back to Lessons
-                    </button>
-                </div>
-            </div>
-        </div>
 
         <!-- B2.1 PAGE -->
         <div id="b21" class="page">
-            <div class="card" style="border-color: var(--blue);">
-                <h2>B2.1 - Basic Needs of Plants 💧</h2>
-                <p>Just like us, plants need certain things to <strong>survive and grow</strong> healthy and strong!</p>
+            <div class="card" style="border-color: var(--green);">
+                <h2>B2.1 - Basic Needs of Living Things 🍎</h2>
+                <p>All living things need certain things to <strong>survive and stay healthy</strong>! Can you name them?</p>
                 
                 <div class="audio-controls">
                     <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b21">
@@ -929,51 +385,51 @@
                 </div>
 
 
-                <h3>What Plants Need 🌱</h3>
+                <h3>What Do Living Things Need? 💧</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
                         <div class="icon">💧</div>
                         <h4>Water</h4>
-                        <p>For growth and transport!</p>
+                        <p>All life needs water!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">☀️</div>
-                        <h4>Light/Sunlight</h4>
-                        <p>Energy for food!</p>
+                        <div class="icon">🍎</div>
+                        <h4>Food/Nutrients</h4>
+                        <p>Energy to live and grow!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
                         <div class="icon">💨</div>
-                        <h4>Air</h4>
-                        <p>Carbon dioxide & oxygen!</p>
+                        <h4>Air/Oxygen</h4>
+                        <p>To breathe and survive!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🔥</div>
-                        <h4>Warmth/Heat</h4>
-                        <p>Right temperature!</p>
+                        <div class="icon">🏠</div>
+                        <h4>Shelter</h4>
+                        <p>A safe place to live!</p>
                     </div>
                 </div>
 
-                <h3>More Plant Needs 🪴</h3>
+                <h3>Why Are These Important? 🌟</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
                         <div class="icon">🌱</div>
-                        <h4>Nutrients</h4>
-                        <p>Food from soil!</p>
+                        <h4>Growth</h4>
+                        <p>Needs help us grow!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">📏</div>
-                        <h4>Space</h4>
-                        <p>Room to grow!</p>
+                        <div class="icon">💪</div>
+                        <h4>Energy</h4>
+                        <p>Food gives us power!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🌍</div>
-                        <h4>Soil</h4>
-                        <p>Anchor and minerals!</p>
+                        <div class="icon">🛡️</div>
+                        <h4>Protection</h4>
+                        <p>Shelter keeps us safe!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">⏰</div>
-                        <h4>Time</h4>
-                        <p>Growing takes time!</p>
+                        <div class="icon">❤️</div>
+                        <h4>Health</h4>
+                        <p>Meeting needs keeps us healthy!</p>
                     </div>
                 </div>
 
@@ -982,23 +438,23 @@
                     
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b21-drag-items">
                         <div class="drag-item" draggable="true" data-category="need">💧 Water</div>
-                        <div class="drag-item" draggable="true" data-category="need">☀️ Sunlight</div>
+                        <div class="drag-item" draggable="true" data-category="need">🍎 Food</div>
                         <div class="drag-item" draggable="true" data-category="need">💨 Air</div>
-                        <div class="drag-item" draggable="true" data-category="need">🌱 Nutrients</div>
+                        <div class="drag-item" draggable="true" data-category="need">🏠 Shelter</div>
                         <div class="drag-item" draggable="true" data-category="notneed">📺 Television</div>
-                        <div class="drag-item" draggable="true" data-category="notneed">🎮 Games</div>
                         <div class="drag-item" draggable="true" data-category="notneed">💰 Money</div>
-                        <div class="drag-item" draggable="true" data-category="notneed">🏀 Sports</div>
+                        <div class="drag-item" draggable="true" data-category="notneed">🎮 Video games</div>
+                        <div class="drag-item" draggable="true" data-category="notneed">🚗 Cars</div>
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">NEED</h4>
-                            <div class="drop-zone" data-category="need"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">NOTNEED</h4>
+                            <div class="drop-zone" data-category="notneed"></div>
                         </div>
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">NOTNEED</h4>
-                            <div class="drop-zone" data-category="notneed"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">NEED</h4>
+                            <div class="drop-zone" data-category="need"></div>
                         </div>
                     </div>
 
@@ -1013,54 +469,54 @@
                     <h3>🎯 Activity 2: Fill in the Blanks!</h3>
                     
                     <div id="b21-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b21-blank1" style="width: 200px;">.
+                                1. <input type="text" id="b21-blank1" style="width: 200px;"> is essential for all living things.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b21-blank2" style="width: 200px;">.
+                                2. Living things need <input type="text" id="b21-blank2" style="width: 200px;"> to survive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b21-blank3" style="width: 200px;">.
+                                3. All organisms require <input type="text" id="b21-blank3" style="width: 200px;"> to live.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b21-blank4" style="width: 200px;">.
+                                4. Living things must have <input type="text" id="b21-blank4" style="width: 200px;"> to thrive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b21-blank5" style="width: 200px;">.
+                                5. Organisms need these things to <input type="text" id="b21-blank5" style="width: 200px;">.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b21-blank6" style="width: 200px;">.
+                                6. Living things use <input type="text" id="b21-blank6" style="width: 200px;"> from their environment.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b21-blank7" style="width: 200px;">.
+                                7. Staying <input type="text" id="b21-blank7" style="width: 200px;"> requires meeting basic needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b21-blank8" style="width: 200px;">.
+                                8. Living things <input type="text" id="b21-blank8" style="width: 200px;"> throughout their lives.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b21-blank9" style="width: 200px;">.
+                                9. All <input type="text" id="b21-blank9" style="width: 200px;"> things share common needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b21-blank10" style="width: 200px;">.
+                                10. We must understand what living things <input type="text" id="b21-blank10" style="width: 200px;">.
                             </p>
                         </div>
                     </div>
@@ -1086,9 +542,9 @@
 
         <!-- B2.2 PAGE -->
         <div id="b22" class="page">
-            <div class="card" style="border-color: var(--green);">
-                <h2>B2.2 - Parts of Plants 🌿</h2>
-                <p>Plants have different <strong>parts</strong> and each part has an important job to help the plant survive!</p>
+            <div class="card" style="border-color: var(--blue);">
+                <h2>B2.2 - Characteristics of Living Things 🌱</h2>
+                <p><strong>Living things</strong> have special characteristics that make them different from non-living things!</p>
                 
                 <div class="audio-controls">
                     <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b22">
@@ -1100,51 +556,51 @@
                 </div>
 
 
-                <h3>Main Plant Parts 🌱</h3>
+                <h3>Signs of Life 🌟</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
                         <div class="icon">🌱</div>
-                        <h4>Roots</h4>
-                        <p>Absorb water & anchor!</p>
+                        <h4>Growth</h4>
+                        <p>Living things grow!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🎋</div>
-                        <h4>Stem</h4>
-                        <p>Support & transport!</p>
+                        <div class="icon">🥚</div>
+                        <h4>Reproduction</h4>
+                        <p>They make babies!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🍃</div>
-                        <h4>Leaves</h4>
-                        <p>Make food (photosynthesis)!</p>
+                        <div class="icon">🍎</div>
+                        <h4>Need Food</h4>
+                        <p>They need nutrients!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🌸</div>
-                        <h4>Flower</h4>
-                        <p>Make seeds!</p>
+                        <div class="icon">💨</div>
+                        <h4>Breathing</h4>
+                        <p>They take in air!</p>
                     </div>
                 </div>
 
-                <h3>Flower Parts & More 🌺</h3>
+                <h3>More Characteristics ✨</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">⭐</div>
-                        <h4>Stamen</h4>
-                        <p>Male part (pollen)!</p>
+                        <div class="icon">🏃</div>
+                        <h4>Movement</h4>
+                        <p>Can move on their own!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">💮</div>
-                        <h4>Pistil</h4>
-                        <p>Female part (seeds)!</p>
+                        <div class="icon">👀</div>
+                        <h4>Respond</h4>
+                        <p>React to environment!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🌰</div>
-                        <h4>Seed</h4>
-                        <p>Grows new plant!</p>
+                        <div class="icon">🗑️</div>
+                        <h4>Waste</h4>
+                        <p>Get rid of waste!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🍎</div>
-                        <h4>Fruit</h4>
-                        <p>Protects seeds!</p>
+                        <div class="icon">🔬</div>
+                        <h4>Made of Cells</h4>
+                        <p>Built from tiny cells!</p>
                     </div>
                 </div>
 
@@ -1152,24 +608,24 @@
                     <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
                     
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b22-drag-items">
-                        <div class="drag-item" draggable="true" data-category="root">🌱 Roots</div>
-                        <div class="drag-item" draggable="true" data-category="stem">🎋 Stem</div>
-                        <div class="drag-item" draggable="true" data-category="stem">🌳 Trunk</div>
-                        <div class="drag-item" draggable="true" data-category="leaf">🍃 Leaves</div>
-                        <div class="drag-item" draggable="true" data-category="leaf">🌿 Needles</div>
-                        <div class="drag-item" draggable="true" data-category="flower">🌸 Flower</div>
-                        <div class="drag-item" draggable="true" data-category="flower">🌺 Blossom</div>
-                        <div class="drag-item" draggable="true" data-category="seed">🌰 Seed</div>
+                        <div class="drag-item" draggable="true" data-category="living">🌱 Growing plant</div>
+                        <div class="drag-item" draggable="true" data-category="living">🐕 Running dog</div>
+                        <div class="drag-item" draggable="true" data-category="living">🦋 Flying butterfly</div>
+                        <div class="drag-item" draggable="true" data-category="living">🐠 Swimming fish</div>
+                        <div class="drag-item" draggable="true" data-category="nonliving">🪨 Rock</div>
+                        <div class="drag-item" draggable="true" data-category="nonliving">📚 Book</div>
+                        <div class="drag-item" draggable="true" data-category="nonliving">⚽ Soccer ball</div>
+                        <div class="drag-item" draggable="true" data-category="nonliving">💡 Light bulb</div>
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">SEED</h4>
-                            <div class="drop-zone" data-category="seed"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">LIVING</h4>
+                            <div class="drop-zone" data-category="living"></div>
                         </div>
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">STEM</h4>
-                            <div class="drop-zone" data-category="stem"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">NONLIVING</h4>
+                            <div class="drop-zone" data-category="nonliving"></div>
                         </div>
                     </div>
 
@@ -1184,54 +640,54 @@
                     <h3>🎯 Activity 2: Fill in the Blanks!</h3>
                     
                     <div id="b22-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b22-blank1" style="width: 200px;">.
+                                1. <input type="text" id="b22-blank1" style="width: 200px;"> is essential for all <input type="text" id="b22-blank1" style="width: 200px;"> things.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b22-blank2" style="width: 200px;">.
+                                2. Living things need <input type="text" id="b22-blank2" style="width: 200px;"> to survive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b22-blank3" style="width: 200px;">.
+                                3. All organisms require <input type="text" id="b22-blank3" style="width: 200px;"> to live.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b22-blank4" style="width: 200px;">.
+                                4. Living things must have <input type="text" id="b22-blank4" style="width: 200px;"> to thrive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b22-blank5" style="width: 200px;">.
+                                5. Organisms need these things to <input type="text" id="b22-blank5" style="width: 200px;">.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b22-blank6" style="width: 200px;">.
+                                6. Living things use <input type="text" id="b22-blank6" style="width: 200px;"> from their environment.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b22-blank7" style="width: 200px;">.
+                                7. Staying <input type="text" id="b22-blank7" style="width: 200px;"> requires meeting basic needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b22-blank8" style="width: 200px;">.
+                                8. Living things <input type="text" id="b22-blank8" style="width: 200px;"> throughout their lives.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b22-blank9" style="width: 200px;">.
+                                9. All <input type="text" id="b22-blank9" style="width: 200px;"> things share common needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b22-blank10" style="width: 200px;">.
+                                10. We must understand what living things <input type="text" id="b22-blank10" style="width: 200px;">.
                             </p>
                         </div>
                     </div>
@@ -1257,9 +713,9 @@
 
         <!-- B2.3 PAGE -->
         <div id="b23" class="page">
-            <div class="card" style="border-color: var(--lime);">
-                <h2>B2.3 - Plant Life Cycles 🌱</h2>
-                <p>Plants go through a <strong>life cycle</strong> as they grow from seeds to mature plants and make new seeds!</p>
+            <div class="card" style="border-color: var(--pink);">
+                <h2>B2.3 - Plants & Animals 🦋</h2>
+                <p>Living things are divided into two main groups: <strong>plants and animals</strong>! They're both alive but very different!</p>
                 
                 <div class="audio-controls">
                     <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b23">
@@ -1271,51 +727,51 @@
                 </div>
 
 
-                <h3>Stages of Plant Growth 🌱</h3>
+                <h3>Plants 🌿</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🌰</div>
-                        <h4>Seed</h4>
-                        <p>Beginning of life!</p>
+                        <div class="icon">🌞</div>
+                        <h4>Make Own Food</h4>
+                        <p>Use sunlight!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
                         <div class="icon">🌱</div>
-                        <h4>Germination</h4>
-                        <p>Seed sprouts!</p>
+                        <h4>Stay in Place</h4>
+                        <p>Rooted down!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🌿</div>
-                        <h4>Seedling</h4>
-                        <p>Young plant grows!</p>
+                        <div class="icon">🍃</div>
+                        <h4>Have Leaves</h4>
+                        <p>For photosynthesis!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🌳</div>
-                        <h4>Adult Plant</h4>
-                        <p>Fully grown!</p>
+                        <div class="icon">💚</div>
+                        <h4>Green Color</h4>
+                        <p>From chlorophyll!</p>
                     </div>
                 </div>
 
-                <h3>Reproduction & Growth 🌸</h3>
+                <h3>Animals 🐾</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🌸</div>
-                        <h4>Flowering</h4>
-                        <p>Makes flowers!</p>
+                        <div class="icon">🍎</div>
+                        <h4>Eat Food</h4>
+                        <p>Can't make own food!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🐝</div>
-                        <h4>Pollination</h4>
-                        <p>Pollen spreads!</p>
+                        <div class="icon">🏃</div>
+                        <h4>Can Move</h4>
+                        <p>Move around freely!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🍎</div>
-                        <h4>Fruit/Seeds</h4>
-                        <p>New seeds form!</p>
+                        <div class="icon">👀</div>
+                        <h4>Have Senses</h4>
+                        <p>See, hear, feel!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🔄</div>
-                        <h4>Cycle Repeats</h4>
-                        <p>Starts again!</p>
+                        <div class="icon">❤️</div>
+                        <h4>Hearts</h4>
+                        <p>Pump blood!</p>
                     </div>
                 </div>
 
@@ -1323,24 +779,24 @@
                     <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
                     
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b23-drag-items">
-                        <div class="drag-item" draggable="true" data-category="stage1">🌰 Seed</div>
-                        <div class="drag-item" draggable="true" data-category="stage1">🌱 Sprouting</div>
-                        <div class="drag-item" draggable="true" data-category="stage2">🌿 Growing</div>
-                        <div class="drag-item" draggable="true" data-category="stage2">☀️ Getting bigger</div>
-                        <div class="drag-item" draggable="true" data-category="stage3">🌸 Flowering</div>
-                        <div class="drag-item" draggable="true" data-category="stage3">🍎 Making fruit</div>
-                        <div class="drag-item" draggable="true" data-category="stage4">🌰 New seeds</div>
-                        <div class="drag-item" draggable="true" data-category="stage4">🔄 Repeating cycle</div>
+                        <div class="drag-item" draggable="true" data-category="plant">🌳 Oak tree</div>
+                        <div class="drag-item" draggable="true" data-category="plant">🌻 Sunflower</div>
+                        <div class="drag-item" draggable="true" data-category="plant">🌾 Wheat</div>
+                        <div class="drag-item" draggable="true" data-category="plant">🍄 Mushroom</div>
+                        <div class="drag-item" draggable="true" data-category="animal">🐕 Dog</div>
+                        <div class="drag-item" draggable="true" data-category="animal">🦋 Butterfly</div>
+                        <div class="drag-item" draggable="true" data-category="animal">🐠 Fish</div>
+                        <div class="drag-item" draggable="true" data-category="animal">🦅 Eagle</div>
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">STAGE1</h4>
-                            <div class="drop-zone" data-category="stage1"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">ANIMAL</h4>
+                            <div class="drop-zone" data-category="animal"></div>
                         </div>
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">STAGE4</h4>
-                            <div class="drop-zone" data-category="stage4"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">PLANT</h4>
+                            <div class="drop-zone" data-category="plant"></div>
                         </div>
                     </div>
 
@@ -1355,54 +811,54 @@
                     <h3>🎯 Activity 2: Fill in the Blanks!</h3>
                     
                     <div id="b23-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b23-blank1" style="width: 200px;">.
+                                1. <input type="text" id="b23-blank1" style="width: 200px;"> is essential for all living things.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b23-blank2" style="width: 200px;">.
+                                2. Living things need <input type="text" id="b23-blank2" style="width: 200px;"> to survive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b23-blank3" style="width: 200px;">.
+                                3. All organisms require <input type="text" id="b23-blank3" style="width: 200px;"> to live.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b23-blank4" style="width: 200px;">.
+                                4. Living things must have <input type="text" id="b23-blank4" style="width: 200px;"> to thrive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b23-blank5" style="width: 200px;">.
+                                5. Organisms need these things to <input type="text" id="b23-blank5" style="width: 200px;">.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b23-blank6" style="width: 200px;">.
+                                6. Living things use <input type="text" id="b23-blank6" style="width: 200px;"> from their environment.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b23-blank7" style="width: 200px;">.
+                                7. Staying <input type="text" id="b23-blank7" style="width: 200px;"> requires meeting basic needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b23-blank8" style="width: 200px;">.
+                                8. Living things <input type="text" id="b23-blank8" style="width: 200px;"> throughout their lives.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b23-blank9" style="width: 200px;">.
+                                9. All <input type="text" id="b23-blank9" style="width: 200px;"> things share common needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b23-blank10" style="width: 200px;">.
+                                10. We must understand what living things <input type="text" id="b23-blank10" style="width: 200px;">.
                             </p>
                         </div>
                     </div>
@@ -1429,8 +885,8 @@
         <!-- B2.4 PAGE -->
         <div id="b24" class="page">
             <div class="card" style="border-color: var(--orange);">
-                <h2>B2.4 - Plant Adaptations 🌵</h2>
-                <p>Plants have amazing <strong>adaptations</strong> to survive in different environments and react to changes!</p>
+                <h2>B2.4 - Adaptations 🦎</h2>
+                <p><strong>Adaptations</strong> are special features that help living things survive in their environment!</p>
                 
                 <div class="audio-controls">
                     <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b24">
@@ -1442,51 +898,51 @@
                 </div>
 
 
-                <h3>Desert Adaptations 🏜️</h3>
+                <h3>Physical Adaptations 💪</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🌵</div>
-                        <h4>Thick Stems</h4>
-                        <p>Store water!</p>
+                        <div class="icon">🦅</div>
+                        <h4>Sharp Claws</h4>
+                        <p>Birds catch prey!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🌵</div>
-                        <h4>Spines</h4>
-                        <p>Protect from animals!</p>
+                        <div class="icon">🐧</div>
+                        <h4>Thick Feathers</h4>
+                        <p>Penguins stay warm!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🌿</div>
-                        <h4>Deep Roots</h4>
-                        <p>Find water deep down!</p>
+                        <div class="icon">🌵</div>
+                        <h4>Thick Stems</h4>
+                        <p>Cacti store water!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🍃</div>
-                        <h4>Waxy Coating</h4>
-                        <p>Prevent water loss!</p>
+                        <div class="icon">🦒</div>
+                        <h4>Long Neck</h4>
+                        <p>Giraffes reach leaves!</p>
                     </div>
                 </div>
 
-                <h3>Other Adaptations 🌲</h3>
+                <h3>Behavioral Adaptations 🎭</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🌲</div>
-                        <h4>Needle Leaves</h4>
-                        <p>Save water in cold!</p>
+                        <div class="icon">🐻</div>
+                        <h4>Hibernation</h4>
+                        <p>Bears sleep in winter!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🌸</div>
-                        <h4>Bright Colors</h4>
-                        <p>Attract pollinators!</p>
+                        <div class="icon">🦅</div>
+                        <h4>Migration</h4>
+                        <p>Birds fly south!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🍂</div>
-                        <h4>Lose Leaves</h4>
-                        <p>Survive winter!</p>
+                        <div class="icon">🦎</div>
+                        <h4>Camouflage</h4>
+                        <p>Lizards hide!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🌿</div>
-                        <h4>Climb Vines</h4>
-                        <p>Reach sunlight!</p>
+                        <div class="icon">🦇</div>
+                        <h4>Nocturnal</h4>
+                        <p>Bats hunt at night!</p>
                     </div>
                 </div>
 
@@ -1494,24 +950,24 @@
                     <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
                     
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b24-drag-items">
-                        <div class="drag-item" draggable="true" data-category="desert">🌵 Water-storing stem</div>
-                        <div class="drag-item" draggable="true" data-category="desert">🌵 Sharp spines</div>
-                        <div class="drag-item" draggable="true" data-category="desert">🌿 Long roots</div>
-                        <div class="drag-item" draggable="true" data-category="desert">🍃 Waxy leaves</div>
-                        <div class="drag-item" draggable="true" data-category="forest">🌲 Needle leaves</div>
-                        <div class="drag-item" draggable="true" data-category="forest">🌳 Tall trunks</div>
-                        <div class="drag-item" draggable="true" data-category="forest">🍂 Shedding leaves</div>
-                        <div class="drag-item" draggable="true" data-category="forest">🌿 Climbing vines</div>
+                        <div class="drag-item" draggable="true" data-category="physical">🦅 Sharp talons</div>
+                        <div class="drag-item" draggable="true" data-category="physical">🌵 Water-storing stem</div>
+                        <div class="drag-item" draggable="true" data-category="physical">🐧 Webbed feet</div>
+                        <div class="drag-item" draggable="true" data-category="physical">🦒 Long neck</div>
+                        <div class="drag-item" draggable="true" data-category="behavioral">🐻 Hibernating</div>
+                        <div class="drag-item" draggable="true" data-category="behavioral">🦅 Flying south</div>
+                        <div class="drag-item" draggable="true" data-category="behavioral">🦎 Changing color</div>
+                        <div class="drag-item" draggable="true" data-category="behavioral">🦇 Hunting at night</div>
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">FOREST</h4>
-                            <div class="drop-zone" data-category="forest"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">PHYSICAL</h4>
+                            <div class="drop-zone" data-category="physical"></div>
                         </div>
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">DESERT</h4>
-                            <div class="drop-zone" data-category="desert"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">BEHAVIORAL</h4>
+                            <div class="drop-zone" data-category="behavioral"></div>
                         </div>
                     </div>
 
@@ -1526,54 +982,54 @@
                     <h3>🎯 Activity 2: Fill in the Blanks!</h3>
                     
                     <div id="b24-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b24-blank1" style="width: 200px;">.
+                                1. <input type="text" id="b24-blank1" style="width: 200px;"> is essential for all living things.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b24-blank2" style="width: 200px;">.
+                                2. Living things need <input type="text" id="b24-blank2" style="width: 200px;"> to <input type="text" id="b24-blank2" style="width: 200px;">.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b24-blank3" style="width: 200px;">.
+                                3. All organisms require <input type="text" id="b24-blank3" style="width: 200px;"> to live.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b24-blank4" style="width: 200px;">.
+                                4. Living things must have <input type="text" id="b24-blank4" style="width: 200px;"> to thrive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b24-blank5" style="width: 200px;">.
+                                5. Organisms need these things to <input type="text" id="b24-blank5" style="width: 200px;">.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b24-blank6" style="width: 200px;">.
+                                6. Living things use <input type="text" id="b24-blank6" style="width: 200px;"> from their environment.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b24-blank7" style="width: 200px;">.
+                                7. Staying <input type="text" id="b24-blank7" style="width: 200px;"> requires meeting basic needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b24-blank8" style="width: 200px;">.
+                                8. Living things <input type="text" id="b24-blank8" style="width: 200px;"> throughout their lives.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b24-blank9" style="width: 200px;">.
+                                9. All <input type="text" id="b24-blank9" style="width: 200px;"> things share common needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b24-blank10" style="width: 200px;">.
+                                10. We must understand what living things <input type="text" id="b24-blank10" style="width: 200px;">.
                             </p>
                         </div>
                     </div>
@@ -1599,9 +1055,9 @@
 
         <!-- B2.5 PAGE -->
         <div id="b25" class="page">
-            <div class="card" style="border-color: var(--yellow);">
-                <h2>B2.5 - Photosynthesis ☀️</h2>
-                <p><strong>Photosynthesis</strong> is how plants make their own food using sunlight! It also gives us oxygen!</p>
+            <div class="card" style="border-color: var(--purple);">
+                <h2>B2.5 - Interdependence 🌍</h2>
+                <p>Living things <strong>depend on each other</strong> to survive! This is called interdependence!</p>
                 
                 <div class="audio-controls">
                     <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b25">
@@ -1613,51 +1069,51 @@
                 </div>
 
 
-                <h3>How Photosynthesis Works 🌞</h3>
+                <h3>Food Chains 🔗</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">☀️</div>
-                        <h4>Absorbs Sunlight</h4>
-                        <p>Energy source!</p>
+                        <div class="icon">🌱</div>
+                        <h4>Producers</h4>
+                        <p>Plants make food!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">💧</div>
-                        <h4>Takes in Water</h4>
-                        <p>From roots!</p>
+                        <div class="icon">🐇</div>
+                        <h4>Herbivores</h4>
+                        <p>Eat plants!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">💨</div>
-                        <h4>Uses CO₂</h4>
-                        <p>From air!</p>
+                        <div class="icon">🦅</div>
+                        <h4>Carnivores</h4>
+                        <p>Eat animals!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🍃</div>
-                        <h4>In Leaves</h4>
-                        <p>Where it happens!</p>
+                        <div class="icon">🍄</div>
+                        <h4>Decomposers</h4>
+                        <p>Break down waste!</p>
                     </div>
                 </div>
 
-                <h3>What Photosynthesis Makes 🌱</h3>
+                <h3>How We Depend 🤝</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🍬</div>
-                        <h4>Makes Sugar</h4>
-                        <p>Plant food!</p>
+                        <div class="icon">🐝</div>
+                        <h4>Pollination</h4>
+                        <p>Bees help flowers!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">💨</div>
-                        <h4>Releases Oxygen</h4>
-                        <p>We breathe it!</p>
+                        <div class="icon">🌳</div>
+                        <h4>Oxygen</h4>
+                        <p>Trees make air!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🌍</div>
-                        <h4>Helps Earth</h4>
-                        <p>Clean air!</p>
+                        <div class="icon">🦋</div>
+                        <h4>Food Source</h4>
+                        <p>Animals eat plants!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">💚</div>
-                        <h4>Green Chlorophyll</h4>
-                        <p>Captures sunlight!</p>
+                        <div class="icon">🌍</div>
+                        <h4>Ecosystem</h4>
+                        <p>All work together!</p>
                     </div>
                 </div>
 
@@ -1665,24 +1121,24 @@
                     <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
                     
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b25-drag-items">
-                        <div class="drag-item" draggable="true" data-category="input">☀️ Sunlight</div>
-                        <div class="drag-item" draggable="true" data-category="input">💧 Water</div>
-                        <div class="drag-item" draggable="true" data-category="input">💨 Carbon dioxide</div>
-                        <div class="drag-item" draggable="true" data-category="input">🍃 Chlorophyll</div>
-                        <div class="drag-item" draggable="true" data-category="output">🍬 Sugar/food</div>
-                        <div class="drag-item" draggable="true" data-category="output">💨 Oxygen</div>
-                        <div class="drag-item" draggable="true" data-category="output">🌱 Energy</div>
-                        <div class="drag-item" draggable="true" data-category="output">💪 Growth</div>
+                        <div class="drag-item" draggable="true" data-category="producer">🌱 Grass</div>
+                        <div class="drag-item" draggable="true" data-category="producer">🌳 Tree</div>
+                        <div class="drag-item" draggable="true" data-category="consumer">🐇 Rabbit</div>
+                        <div class="drag-item" draggable="true" data-category="consumer">🦅 Hawk</div>
+                        <div class="drag-item" draggable="true" data-category="consumer">🐸 Frog</div>
+                        <div class="drag-item" draggable="true" data-category="decomposer">🍄 Mushroom</div>
+                        <div class="drag-item" draggable="true" data-category="decomposer">🪱 Earthworm</div>
+                        <div class="drag-item" draggable="true" data-category="decomposer">🦠 Bacteria</div>
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">OUTPUT</h4>
-                            <div class="drop-zone" data-category="output"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">CONSUMER</h4>
+                            <div class="drop-zone" data-category="consumer"></div>
                         </div>
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">INPUT</h4>
-                            <div class="drop-zone" data-category="input"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">PRODUCER</h4>
+                            <div class="drop-zone" data-category="producer"></div>
                         </div>
                     </div>
 
@@ -1697,54 +1153,54 @@
                     <h3>🎯 Activity 2: Fill in the Blanks!</h3>
                     
                     <div id="b25-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b25-blank1" style="width: 200px;">.
+                                1. <input type="text" id="b25-blank1" style="width: 200px;"> is essential for all living things.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b25-blank2" style="width: 200px;">.
+                                2. Living things need <input type="text" id="b25-blank2" style="width: 200px;"> to survive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b25-blank3" style="width: 200px;">.
+                                3. All organisms require <input type="text" id="b25-blank3" style="width: 200px;"> to live.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b25-blank4" style="width: 200px;">.
+                                4. Living things must have <input type="text" id="b25-blank4" style="width: 200px;"> to thrive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b25-blank5" style="width: 200px;">.
+                                5. Organisms need these things to <input type="text" id="b25-blank5" style="width: 200px;">.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b25-blank6" style="width: 200px;">.
+                                6. Living things use <input type="text" id="b25-blank6" style="width: 200px;"> from their environment.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b25-blank7" style="width: 200px;">.
+                                7. Staying <input type="text" id="b25-blank7" style="width: 200px;"> requires meeting basic needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b25-blank8" style="width: 200px;">.
+                                8. Living things <input type="text" id="b25-blank8" style="width: 200px;"> throughout their lives.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b25-blank9" style="width: 200px;">.
+                                9. All <input type="text" id="b25-blank9" style="width: 200px;"> things share common needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b25-blank10" style="width: 200px;">.
+                                10. We must understand what living things <input type="text" id="b25-blank10" style="width: 200px;">.
                             </p>
                         </div>
                     </div>
@@ -1770,9 +1226,9 @@
 
         <!-- B2.6 PAGE -->
         <div id="b26" class="page">
-            <div class="card" style="border-color: var(--purple);">
-                <h2>B2.6 - Plants in Culture 🏺</h2>
-                <p>People around the world, including <strong>Indigenous peoples</strong>, use plants for many important purposes!</p>
+            <div class="card" style="border-color: var(--teal);">
+                <h2>B2.6 - Human Impact on Living Things ♻️</h2>
+                <p>Humans affect living things in both <strong>positive and negative</strong> ways! We can help or harm nature!</p>
                 
                 <div class="audio-controls">
                     <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b26">
@@ -1784,51 +1240,51 @@
                 </div>
 
 
-                <h3>How People Use Plants 🌍</h3>
+                <h3>Negative Impacts ⚠️</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🍎</div>
-                        <h4>Food</h4>
-                        <p>Fruits, veggies, grains!</p>
+                        <div class="icon">🏭</div>
+                        <h4>Pollution</h4>
+                        <p>Harms air and water!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🏠</div>
-                        <h4>Shelter</h4>
-                        <p>Wood for buildings!</p>
+                        <div class="icon">🪓</div>
+                        <h4>Deforestation</h4>
+                        <p>Destroys habitats!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">💊</div>
-                        <h4>Medicine</h4>
-                        <p>Healing plants!</p>
+                        <div class="icon">🗑️</div>
+                        <h4>Littering</h4>
+                        <p>Hurts animals!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">👕</div>
-                        <h4>Clothing</h4>
-                        <p>Cotton, fibers!</p>
+                        <div class="icon">🌡️</div>
+                        <h4>Climate Change</h4>
+                        <p>Changes environment!</p>
                     </div>
                 </div>
 
-                <h3>Indigenous Plant Uses 🪶</h3>
+                <h3>Positive Actions ✅</h3>
                 <div class="example-grid">
                     <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🌾</div>
-                        <h4>Three Sisters</h4>
-                        <p>Corn, beans, squash!</p>
+                        <div class="icon">♻️</div>
+                        <h4>Recycling</h4>
+                        <p>Reduces waste!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🌲</div>
-                        <h4>Cedar</h4>
-                        <p>Homes and tools!</p>
+                        <div class="icon">🌳</div>
+                        <h4>Planting Trees</h4>
+                        <p>Helps animals!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🫐</div>
-                        <h4>Berries</h4>
-                        <p>Food and medicine!</p>
+                        <div class="icon">🏞️</div>
+                        <h4>Conservation</h4>
+                        <p>Protects nature!</p>
                     </div>
                     <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🌿</div>
-                        <h4>Sweetgrass</h4>
-                        <p>Ceremonies!</p>
+                        <div class="icon">💚</div>
+                        <h4>Clean Energy</h4>
+                        <p>Better for Earth!</p>
                     </div>
                 </div>
 
@@ -1836,24 +1292,24 @@
                     <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
                     
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b26-drag-items">
-                        <div class="drag-item" draggable="true" data-category="food">🍎 Apples</div>
-                        <div class="drag-item" draggable="true" data-category="food">🌾 Corn</div>
-                        <div class="drag-item" draggable="true" data-category="medicine">💊 Willow bark</div>
-                        <div class="drag-item" draggable="true" data-category="medicine">🌿 Herbs</div>
-                        <div class="drag-item" draggable="true" data-category="shelter">🏠 Wood</div>
-                        <div class="drag-item" draggable="true" data-category="shelter">🌲 Cedar</div>
-                        <div class="drag-item" draggable="true" data-category="clothing">👕 Cotton</div>
-                        <div class="drag-item" draggable="true" data-category="clothing">🌾 Flax</div>
+                        <div class="drag-item" draggable="true" data-category="harmful">🏭 Factory pollution</div>
+                        <div class="drag-item" draggable="true" data-category="harmful">🪓 Cutting forests</div>
+                        <div class="drag-item" draggable="true" data-category="harmful">🗑️ Throwing trash</div>
+                        <div class="drag-item" draggable="true" data-category="harmful">🛢️ Oil spills</div>
+                        <div class="drag-item" draggable="true" data-category="helpful">♻️ Recycling</div>
+                        <div class="drag-item" draggable="true" data-category="helpful">🌳 Planting trees</div>
+                        <div class="drag-item" draggable="true" data-category="helpful">🏞️ Making parks</div>
+                        <div class="drag-item" draggable="true" data-category="helpful">🚴 Using bikes</div>
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">CLOTHING</h4>
-                            <div class="drop-zone" data-category="clothing"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">HARMFUL</h4>
+                            <div class="drop-zone" data-category="harmful"></div>
                         </div>
                         <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">FOOD</h4>
-                            <div class="drop-zone" data-category="food"></div>
+                            <h4 style="text-align: center; color: var(--green); font-size: 1.5rem;">HELPFUL</h4>
+                            <div class="drop-zone" data-category="helpful"></div>
                         </div>
                     </div>
 
@@ -1868,54 +1324,54 @@
                     <h3>🎯 Activity 2: Fill in the Blanks!</h3>
                     
                     <div id="b26-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b26-blank1" style="width: 200px;">.
+                                1. <input type="text" id="b26-blank1" style="width: 200px;"> is essential for all living things.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b26-blank2" style="width: 200px;">.
+                                2. Living things need <input type="text" id="b26-blank2" style="width: 200px;"> to survive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b26-blank3" style="width: 200px;">.
+                                3. All organisms require <input type="text" id="b26-blank3" style="width: 200px;"> to live.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b26-blank4" style="width: 200px;">.
+                                4. Living things must have <input type="text" id="b26-blank4" style="width: 200px;"> to thrive.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b26-blank5" style="width: 200px;">.
+                                5. Organisms need these things to <input type="text" id="b26-blank5" style="width: 200px;">.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b26-blank6" style="width: 200px;">.
+                                6. Living things use <input type="text" id="b26-blank6" style="width: 200px;"> from their environment.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b26-blank7" style="width: 200px;">.
+                                7. Staying <input type="text" id="b26-blank7" style="width: 200px;"> requires meeting basic needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b26-blank8" style="width: 200px;">.
+                                8. Living things <input type="text" id="b26-blank8" style="width: 200px;"> throughout their lives.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b26-blank9" style="width: 200px;">.
+                                9. All <input type="text" id="b26-blank9" style="width: 200px;"> things share common needs.
                             </p>
                         </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--green);">
                             <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b26-blank10" style="width: 200px;">.
+                                10. We must understand what living things <input type="text" id="b26-blank10" style="width: 200px;">.
                             </p>
                         </div>
                     </div>
@@ -1938,438 +1394,63 @@
                 </div>
             </div>
         </div>
-
-        <!-- B2.7 PAGE -->
-        <div id="b27" class="page">
-            <div class="card" style="border-color: var(--red);">
-                <h2>B2.7 - Plants for Food 🍎</h2>
-                <p>We eat many different <strong>parts of plants</strong>! Indigenous peoples grow and harvest traditional foods!</p>
-                
-                <div class="audio-controls">
-                    <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b27">
-                        🔊 Read This Page Aloud
-                    </button>
-                    <button class="btn btn-reset" onclick="stopReading()" id="stopBtn-b27" style="display: none;">
-                        ⏸️ Stop Reading
-                    </button>
-                </div>
-
-
-                <h3>Parts We Eat 🥗</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🥕</div>
-                        <h4>Roots</h4>
-                        <p>Carrots, potatoes!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🥬</div>
-                        <h4>Leaves</h4>
-                        <p>Lettuce, spinach!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🌽</div>
-                        <h4>Seeds</h4>
-                        <p>Corn, beans!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🍎</div>
-                        <h4>Fruits</h4>
-                        <p>Apples, berries!</p>
-                    </div>
-                </div>
-
-                <h3>Indigenous Food Plants 🌾</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🌾</div>
-                        <h4>Wild Rice</h4>
-                        <p>Traditional grain!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🫐</div>
-                        <h4>Blueberries</h4>
-                        <p>Forest harvest!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🥔</div>
-                        <h4>Three Sisters</h4>
-                        <p>Companion planting!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🌿</div>
-                        <h4>Fiddleheads</h4>
-                        <p>Spring greens!</p>
-                    </div>
-                </div>
-
-                <div class="activity-box">
-                    <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
-                    
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b27-drag-items">
-                        <div class="drag-item" draggable="true" data-category="root">🥕 Carrot</div>
-                        <div class="drag-item" draggable="true" data-category="root">🥔 Potato</div>
-                        <div class="drag-item" draggable="true" data-category="leaf">🥬 Lettuce</div>
-                        <div class="drag-item" draggable="true" data-category="leaf">🌿 Spinach</div>
-                        <div class="drag-item" draggable="true" data-category="seed">🌽 Corn</div>
-                        <div class="drag-item" draggable="true" data-category="seed">🫘 Beans</div>
-                        <div class="drag-item" draggable="true" data-category="fruit">🍎 Apple</div>
-                        <div class="drag-item" draggable="true" data-category="fruit">🫐 Blueberry</div>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">ROOT</h4>
-                            <div class="drop-zone" data-category="root"></div>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">SEED</h4>
-                            <div class="drop-zone" data-category="seed"></div>
-                        </div>
-                    </div>
-
-                    <div class="button-group">
-                        <button class="btn btn-check" onclick="checkB27DragDrop()">Check Sorting!</button>
-                        <button class="btn btn-reset" onclick="resetB27DragDrop()">Reset</button>
-                    </div>
-                    <div id="b27-drag-feedback" class="feedback"></div>
-                </div>
-
-                <div class="activity-box" style="background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); border-color: var(--blue);">
-                    <h3>🎯 Activity 2: Fill in the Blanks!</h3>
-                    
-                    <div id="b27-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b27-blank1" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b27-blank2" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b27-blank3" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b27-blank4" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b27-blank5" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b27-blank6" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b27-blank7" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b27-blank8" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b27-blank9" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b27-blank10" style="width: 200px;">.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-check" onclick="checkB27FillBlanks()">Check Answers!</button>
-                    <div id="b27-fillblank-feedback" class="feedback"></div>
-                </div>
-
-                <div class="quiz-box">
-                    <h3>📝 Quiz Time!</h3>
-                    <div id="b27-quiz"></div>
-                    <button class="btn btn-check" onclick="checkQuiz('b27')" style="margin-top: 1.5rem;">Submit Quiz</button>
-                    <div id="b27-quiz-score" class="score-display" style="display: none;"></div>
-                </div>
-
-                <div style="text-align: center;">
-                    <button class="back-button bottom-back-button" onclick="showPage('home', event)">
-                        ← Back to Lessons
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- B2.8 PAGE -->
-        <div id="b28" class="page">
-            <div class="card" style="border-color: var(--teal);">
-                <h2>B2.8 - Interdependence 🤝</h2>
-                <p>Plants, animals, and humans all <strong>depend on each other</strong> to survive and thrive!</p>
-                
-                <div class="audio-controls">
-                    <button class="btn btn-audio" onclick="readPageAloud()" id="readBtn-b28">
-                        🔊 Read This Page Aloud
-                    </button>
-                    <button class="btn btn-reset" onclick="stopReading()" id="stopBtn-b28" style="display: none;">
-                        ⏸️ Stop Reading
-                    </button>
-                </div>
-
-
-                <h3>How Plants Help Animals 🦋</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🍎</div>
-                        <h4>Food Source</h4>
-                        <p>Animals eat plants!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🏠</div>
-                        <h4>Shelter</h4>
-                        <p>Homes in trees!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">💨</div>
-                        <h4>Oxygen</h4>
-                        <p>Air to breathe!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🌡️</div>
-                        <h4>Climate</h4>
-                        <p>Shade and cooling!</p>
-                    </div>
-                </div>
-
-                <h3>How Animals Help Plants 🐝</h3>
-                <div class="example-grid">
-                    <div class="example-card" style="border-color: var(--blue);">
-                        <div class="icon">🐝</div>
-                        <h4>Pollination</h4>
-                        <p>Spread pollen!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--pink);">
-                        <div class="icon">🌰</div>
-                        <h4>Seed Dispersal</h4>
-                        <p>Carry seeds away!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--orange);">
-                        <div class="icon">🌱</div>
-                        <h4>Nutrients</h4>
-                        <p>Animal waste fertilizes!</p>
-                    </div>
-                    <div class="example-card" style="border-color: var(--green);">
-                        <div class="icon">🔄</div>
-                        <h4>Balance</h4>
-                        <p>Ecosystem harmony!</p>
-                    </div>
-                </div>
-
-                <div class="activity-box">
-                    <h3>🎯 Activity 1: Drag & Drop Challenge!</h3>
-                    
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 2rem 0;" id="b28-drag-items">
-                        <div class="drag-item" draggable="true" data-category="plantshelp">🍎 Give food</div>
-                        <div class="drag-item" draggable="true" data-category="plantshelp">💨 Make oxygen</div>
-                        <div class="drag-item" draggable="true" data-category="plantshelp">🏠 Provide shelter</div>
-                        <div class="drag-item" draggable="true" data-category="plantshelp">🌡️ Cool environment</div>
-                        <div class="drag-item" draggable="true" data-category="animalshelp">🐝 Pollinate flowers</div>
-                        <div class="drag-item" draggable="true" data-category="animalshelp">🌰 Spread seeds</div>
-                        <div class="drag-item" draggable="true" data-category="animalshelp">🌱 Add nutrients</div>
-                        <div class="drag-item" draggable="true" data-category="animalshelp">🔄 Keep balance</div>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">ANIMALSHELP</h4>
-                            <div class="drop-zone" data-category="animalshelp"></div>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center; color: var(--lime); font-size: 1.5rem;">PLANTSHELP</h4>
-                            <div class="drop-zone" data-category="plantshelp"></div>
-                        </div>
-                    </div>
-
-                    <div class="button-group">
-                        <button class="btn btn-check" onclick="checkB28DragDrop()">Check Sorting!</button>
-                        <button class="btn btn-reset" onclick="resetB28DragDrop()">Reset</button>
-                    </div>
-                    <div id="b28-drag-feedback" class="feedback"></div>
-                </div>
-
-                <div class="activity-box" style="background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%); border-color: var(--blue);">
-                    <h3>🎯 Activity 2: Fill in the Blanks!</h3>
-                    
-                    <div id="b28-fill-blank" style="display: grid; gap: 2rem; margin: 2rem 0;">
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                1. Plants are important because they provide <input type="text" id="b28-blank1" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                2. Plants are important because they provide <input type="text" id="b28-blank2" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                3. Plants are important because they provide <input type="text" id="b28-blank3" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                4. Plants are important because they provide <input type="text" id="b28-blank4" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                5. Plants are important because they provide <input type="text" id="b28-blank5" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                6. Plants are important because they provide <input type="text" id="b28-blank6" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                7. Plants are important because they provide <input type="text" id="b28-blank7" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                8. Plants are important because they provide <input type="text" id="b28-blank8" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                9. Plants are important because they provide <input type="text" id="b28-blank9" style="width: 200px;">.
-                            </p>
-                        </div>
-                        <div style="background: white; padding: 2rem; border-radius: 15px; border: 3px solid var(--lime);">
-                            <p style="font-weight: 700; font-size: 1.2rem; line-height: 2;">
-                                10. Plants are important because they provide <input type="text" id="b28-blank10" style="width: 200px;">.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-check" onclick="checkB28FillBlanks()">Check Answers!</button>
-                    <div id="b28-fillblank-feedback" class="feedback"></div>
-                </div>
-
-                <div class="quiz-box">
-                    <h3>📝 Quiz Time!</h3>
-                    <div id="b28-quiz"></div>
-                    <button class="btn btn-check" onclick="checkQuiz('b28')" style="margin-top: 1.5rem;">Submit Quiz</button>
-                    <div id="b28-quiz-score" class="score-display" style="display: none;"></div>
-                </div>
-
-                <div style="text-align: center;">
-                    <button class="back-button bottom-back-button" onclick="showPage('home', event)">
-                        ← Back to Lessons
-                    </button>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script>
-        // Quiz Data - 5 questions per unit × 11 units
+        // Quiz Data
         const quizData = {
-            b11: [
-                { question: "Why are plants important?", options: ["They're pretty", "They make oxygen and food", "They're green", "They grow"], correct: 1 },
-                { question: "Plants provide:", options: ["Only shade", "Food, medicine, shelter", "Just flowers", "Only wood"], correct: 1 },
-                { question: "How do plants help animals?", options: ["They don't", "Food and homes", "By making noise", "By being colorful"], correct: 1 },
-                { question: "Native plants need:", options: ["Extra care", "Protection from humans", "Nothing", "To be moved"], correct: 1 },
-                { question: "We can protect plants by:", options: ["Cutting them all", "Preserving habitats", "Ignoring them", "Moving them"], correct: 1 }
-            ],
-            b12: [
-                { question: "Deforestation means:", options: ["Planting trees", "Cutting down forests", "Growing forests", "Protecting trees"], correct: 1 },
-                { question: "How can we help plants?", options: ["Litter more", "Plant native species", "Cut all trees", "Pour chemicals"], correct: 1 },
-                { question: "Pollution affects plants by:", options: ["Helping them grow", "Harming their health", "Making them prettier", "Nothing"], correct: 1 },
-                { question: "We should protect:", options: ["Only big trees", "All plant species", "No plants", "Just flowers"], correct: 1 },
-                { question: "Climate change:", options: ["Helps all plants", "Threatens plants", "Does nothing", "Makes plants happy"], correct: 1 }
-            ],
-            b13: [
-                { question: "Locally grown food is:", options: ["From far away", "Grown nearby", "Always expensive", "Never fresh"], correct: 1 },
-                { question: "Benefit of local food:", options: ["More pollution", "Fresher produce", "Less variety", "Always costs more"], correct: 1 },
-                { question: "Local food has less:", options: ["Taste", "Transport pollution", "Freshness", "Quality"], correct: 1 },
-                { question: "Limitation of local food:", options: ["Too fresh", "Only seasonal", "Too cheap", "Too much variety"], correct: 1 },
-                { question: "Buying local:", options: ["Harms farmers", "Supports community", "Wastes money", "Is bad"], correct: 1 }
-            ],
             b21: [
-                { question: "Plants need:", options: ["Only water", "Water, light, air, nutrients", "Just soil", "Only sun"], correct: 1 },
-                { question: "Why do plants need light?", options: ["To see", "For photosynthesis", "To sleep", "To play"], correct: 1 },
-                { question: "Plants get nutrients from:", options: ["Air only", "Soil and water", "Moon", "Stars"], correct: 1 },
-                { question: "Without water, plants:", options: ["Grow faster", "Will die", "Stay same", "Turn blue"], correct: 1 },
-                { question: "Plants need space to:", options: ["Dance", "Grow roots and leaves", "Hide", "Sleep"], correct: 1 }
+                { question: "What do all living things need?", options: ["Only toys", "Water, food, air, shelter", "Just money", "Video games"], correct: 1 },
+                { question: "Why do living things need water?", options: ["For fun", "To survive", "To play", "To wash"], correct: 1 },
+                { question: "Food gives living things:", options: ["Toys", "Energy", "Money", "Games"], correct: 1 },
+                { question: "Shelter protects living things from:", options: ["Fun", "Danger and weather", "Happiness", "Games"], correct: 1 },
+                { question: "Air provides:", options: ["Toys", "Oxygen to breathe", "Money", "Food"], correct: 1 }
             ],
             b22: [
-                { question: "Roots help plants:", options: ["Fly", "Absorb water", "Make noise", "See"], correct: 1 },
-                { question: "Leaves are for:", options: ["Dancing", "Photosynthesis", "Swimming", "Sleeping"], correct: 1 },
-                { question: "The stem:", options: ["Makes seeds", "Supports and transports", "Creates roots", "Nothing"], correct: 1 },
-                { question: "Flowers help plants:", options: ["Reproduce", "Absorb water", "Stand up", "Breathe"], correct: 1 },
-                { question: "Seeds:", options: ["Are useless", "Grow new plants", "Feed stems", "Make leaves"], correct: 1 }
+                { question: "What is a characteristic of living things?", options: ["They can't move", "They grow", "They never change", "They're made of metal"], correct: 1 },
+                { question: "Living things can:", options: ["Never move", "Reproduce", "Live without air", "Never eat"], correct: 1 },
+                { question: "What makes something alive?", options: ["It's shiny", "It has cells", "It's colorful", "It's big"], correct: 1 },
+                { question: "Living things respond to:", options: ["Nothing", "Their environment", "Only music", "Only light"], correct: 1 },
+                { question: "Which is NOT alive?", options: ["Plant", "Rock", "Animal", "Insect"], correct: 1 }
             ],
             b23: [
-                { question: "A plant life cycle starts with:", options: ["Flower", "Seed", "Fruit", "Leaf"], correct: 1 },
-                { question: "Germination is when:", options: ["Plant dies", "Seed sprouts", "Flower blooms", "Fruit forms"], correct: 1 },
-                { question: "After flowering, plants:", options: ["Die immediately", "Make seeds", "Stop growing", "Turn blue"], correct: 1 },
-                { question: "Adult plants:", options: ["Never change", "Can reproduce", "Are babies", "Don't grow"], correct: 1 },
-                { question: "The cycle repeats when:", options: ["It rains", "New seeds grow", "Winter comes", "It's sunny"], correct: 1 }
+                { question: "Plants make their own food using:", options: ["Microwave", "Sunlight", "Money", "TV"], correct: 1 },
+                { question: "Animals must:", options: ["Make their own food", "Eat other organisms", "Never move", "Stay in place"], correct: 1 },
+                { question: "Plants have:", options: ["Wings", "Roots and leaves", "Legs", "Arms"], correct: 1 },
+                { question: "Animals can:", options: ["Photosynthesize", "Move around", "Make oxygen", "Never eat"], correct: 1 },
+                { question: "Green plants get color from:", options: ["Paint", "Chlorophyll", "Water", "Soil"], correct: 1 }
             ],
             b24: [
-                { question: "Cactus spines are an:", options: ["Mistake", "Adaptation", "Disease", "Accident"], correct: 1 },
-                { question: "Plants adapt to:", options: ["TV shows", "Their environment", "Video games", "Nothing"], correct: 1 },
-                { question: "Thick stems help cacti:", options: ["Jump", "Store water", "Fly", "Swim"], correct: 1 },
-                { question: "Adaptations help plants:", options: ["Die faster", "Survive better", "Look worse", "Shrink"], correct: 1 },
-                { question: "Needle leaves help:", options: ["Make noise", "Reduce water loss", "Attract bugs", "Nothing"], correct: 1 }
+                { question: "What is an adaptation?", options: ["A mistake", "Feature helping survival", "A game", "A toy"], correct: 1 },
+                { question: "Sharp claws help birds:", options: ["Swim", "Catch prey", "Sleep", "Hide"], correct: 1 },
+                { question: "Hibernation is a:", options: ["Physical adaptation", "Behavioral adaptation", "Color", "Size"], correct: 1 },
+                { question: "Thick fur helps animals:", options: ["Fly", "Stay warm", "See better", "Run faster"], correct: 1 },
+                { question: "Migration means:", options: ["Sleeping", "Moving to new location", "Eating", "Growing"], correct: 1 }
             ],
             b25: [
-                { question: "Photosynthesis makes:", options: ["Rocks", "Food and oxygen", "Soil", "Animals"], correct: 1 },
-                { question: "Plants need sunlight for:", options: ["Sleeping", "Photosynthesis", "Dancing", "Hiding"], correct: 1 },
-                { question: "Photosynthesis uses:", options: ["Only water", "CO₂, water, sunlight", "Just air", "Only soil"], correct: 1 },
-                { question: "Chlorophyll is:", options: ["Red", "Green", "Blue", "Clear"], correct: 1 },
-                { question: "Photosynthesis happens in:", options: ["Roots", "Leaves", "Flowers", "Seeds"], correct: 1 }
+                { question: "Interdependence means:", options: ["Living alone", "Depending on each other", "Never helping", "Being separate"], correct: 1 },
+                { question: "Producers in food chain are:", options: ["Animals", "Plants", "Rocks", "Water"], correct: 1 },
+                { question: "Herbivores eat:", options: ["Only meat", "Only plants", "Nothing", "Rocks"], correct: 1 },
+                { question: "Decomposers:", options: ["Make food", "Break down waste", "Never work", "Sleep"], correct: 1 },
+                { question: "Bees help flowers by:", options: ["Eating them", "Pollination", "Hiding them", "Breaking them"], correct: 1 }
             ],
             b26: [
-                { question: "People use plants for:", options: ["Only decoration", "Food, medicine, shelter", "Nothing", "Just shade"], correct: 1 },
-                { question: "Indigenous peoples use:", options: ["No plants", "Traditional plants", "Only foreign plants", "Fake plants"], correct: 1 },
-                { question: "Cedar is used for:", options: ["Only fires", "Homes and tools", "Nothing", "Only food"], correct: 1 },
-                { question: "Plants provide medicine:", options: ["Never", "From many species", "Only from trees", "From roots only"], correct: 1 },
-                { question: "Three Sisters are:", options: ["People", "Corn, beans, squash", "Trees", "Flowers"], correct: 1 }
-            ],
-            b27: [
-                { question: "We eat plant:", options: ["Only leaves", "Roots, leaves, seeds, fruits", "Just flowers", "Only stems"], correct: 1 },
-                { question: "Carrots are:", options: ["Leaves", "Roots", "Flowers", "Seeds"], correct: 1 },
-                { question: "Corn is a:", options: ["Root", "Seed", "Flower", "Leaf"], correct: 1 },
-                { question: "Indigenous peoples grow:", options: ["No food", "Traditional crops", "Only imports", "Fake plants"], correct: 1 },
-                { question: "Apples are:", options: ["Roots", "Fruits", "Leaves", "Seeds"], correct: 1 }
-            ],
-            b28: [
-                { question: "Plants and animals:", options: ["Never interact", "Depend on each other", "Are enemies", "Don't need each other"], correct: 1 },
-                { question: "Bees help plants by:", options: ["Eating them", "Pollinating", "Destroying them", "Nothing"], correct: 1 },
-                { question: "Plants give animals:", options: ["Nothing", "Food and oxygen", "Only shade", "Just flowers"], correct: 1 },
-                { question: "Animals help plants:", options: ["Never", "Spread seeds", "Destroy them", "Eat all of them"], correct: 1 },
-                { question: "Interdependence means:", options: ["Independence", "Depending on each other", "Being alone", "Not helping"], correct: 1 }
+                { question: "Pollution affects living things:", options: ["Positively", "Negatively", "Not at all", "Only helps"], correct: 1 },
+                { question: "Planting trees helps by:", options: ["Harming animals", "Providing habitats", "Making pollution", "Removing air"], correct: 1 },
+                { question: "Recycling is:", options: ["Bad for Earth", "Good for environment", "Waste of time", "Harmful"], correct: 1 },
+                { question: "Cutting forests causes:", options: ["More trees", "Habitat loss", "More animals", "Better air"], correct: 1 },
+                { question: "How can we help nature?", options: ["Litter more", "Conserve resources", "Cut trees", "Pollute water"], correct: 1 }
             ]
         };
 
-        // Text-to-Speech
+        // Text-to-Speech Functionality
         let speechSynthesis = window.speechSynthesis;
         let currentUtterance = null;
 
         function readPageAloud() {
-            if (speechSynthesis.speaking) speechSynthesis.cancel();
+            if (speechSynthesis.speaking) {
+                speechSynthesis.cancel();
+            }
             
             const activePage = document.querySelector('.page.active');
             if (!activePage || activePage.id === 'home') {
@@ -2381,6 +1462,7 @@
             if (!card) return;
             
             let textToRead = '';
+            
             const title = card.querySelector('h2');
             if (title) textToRead += title.textContent + '. ';
             
@@ -2447,16 +1529,24 @@
         }
 
         function stopReading() {
-            if (speechSynthesis.speaking) speechSynthesis.cancel();
-            document.querySelectorAll('[id^="readBtn-"]').forEach(btn => btn.style.display = 'inline-block');
-            document.querySelectorAll('[id^="stopBtn-"]').forEach(btn => btn.style.display = 'none');
+            if (speechSynthesis.speaking) {
+                speechSynthesis.cancel();
+            }
+            
+            const readBtns = document.querySelectorAll('[id^="readBtn-"]');
+            const stopBtns = document.querySelectorAll('[id^="stopBtn-"]');
+            
+            readBtns.forEach(btn => btn.style.display = 'inline-block');
+            stopBtns.forEach(btn => btn.style.display = 'none');
         }
 
         // Page Navigation
         function showPage(pageId, event) {
             stopReading();
+            
             document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
             document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            
             document.getElementById(pageId).classList.add('active');
             if (event && event.target) event.target.classList.add('active');
             
@@ -2532,13 +1622,13 @@
                     if (selectedIndex === q.correct) {
                         selected.classList.add('correct');
                         feedback.className = 'feedback correct show';
-                        feedback.textContent = '✓ Correct!';
+                        feedback.textContent = '✓ Correct! Great job!';
                         correct++;
                     } else {
                         selected.classList.add('incorrect');
                         question.querySelectorAll('.option')[q.correct].classList.add('correct');
                         feedback.className = 'feedback incorrect show';
-                        feedback.textContent = '✗ Not quite. Correct answer shown in green.';
+                        feedback.textContent = '✗ Not quite. The correct answer is shown in green.';
                     }
                 }
             });
@@ -2546,33 +1636,62 @@
             const scoreDisplay = document.getElementById(`${section}-quiz-score`);
             scoreDisplay.style.display = 'block';
             scoreDisplay.innerHTML = `
-                <h3>Score: ${correct}/${questions.length}</h3>
+                <h3>Your Score: ${correct} / ${questions.length}</h3>
                 <p>${correct === questions.length ? '🎉 Perfect!' : 
                      correct >= questions.length * 0.8 ? '⭐ Great!' :
-                     correct >= questions.length * 0.6 ? '😊 Good!' : '📚 Keep trying!'}</p>
+                     correct >= questions.length * 0.6 ? '😊 Good!' :
+                     '📚 Keep trying!'}</p>
             `;
         }
 
         // Drag and Drop
         let draggedElement = null;
 
-        document.addEventListener('DOMContentLoaded', setupDragAndDrop);
+        document.addEventListener('DOMContentLoaded', function() {
+            setupDragAndDrop();
+        });
 
         function setupDragAndDrop() {
-            document.querySelectorAll('.drag-item').forEach(item => {
-                item.addEventListener('dragstart', e => { draggedElement = item; item.style.opacity = '0.5'; });
-                item.addEventListener('dragend', e => { item.style.opacity = '1'; });
+            const dragItems = document.querySelectorAll('.drag-item');
+            const dropZones = document.querySelectorAll('.drop-zone');
+            
+            dragItems.forEach(item => {
+                item.addEventListener('dragstart', handleDragStart);
+                item.addEventListener('dragend', handleDragEnd);
             });
             
-            document.querySelectorAll('.drop-zone').forEach(zone => {
-                zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('drag-over'); });
-                zone.addEventListener('dragleave', e => { zone.classList.remove('drag-over'); });
-                zone.addEventListener('drop', e => {
-                    e.preventDefault();
-                    zone.classList.remove('drag-over');
-                    if (draggedElement) { zone.appendChild(draggedElement); draggedElement = null; }
-                });
+            dropZones.forEach(zone => {
+                zone.addEventListener('dragover', handleDragOver);
+                zone.addEventListener('drop', handleDrop);
+                zone.addEventListener('dragleave', handleDragLeave);
             });
+        }
+
+        function handleDragStart(e) {
+            draggedElement = this;
+            this.style.opacity = '0.5';
+        }
+
+        function handleDragEnd(e) {
+            this.style.opacity = '1';
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            this.classList.add('drag-over');
+        }
+
+        function handleDragLeave(e) {
+            this.classList.remove('drag-over');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            this.classList.remove('drag-over');
+            if (draggedElement) {
+                this.appendChild(draggedElement);
+                draggedElement = null;
+            }
         }
 
         function checkGenericDragDrop(unitId) {
@@ -2581,7 +1700,8 @@
             
             dropZones.forEach(zone => {
                 const category = zone.dataset.category;
-                zone.querySelectorAll('.drag-item').forEach(item => {
+                const items = zone.querySelectorAll('.drag-item');
+                items.forEach(item => {
                     total++;
                     if (item.dataset.category === category) {
                         correct++;
@@ -2593,28 +1713,26 @@
             });
             
             const feedback = document.getElementById(`${unitId}-drag-feedback`);
-            feedback.className = 'feedback show ' + (correct === total && total > 0 ? 'correct' : 'incorrect');
-            feedback.textContent = correct === total && total > 0 ? 
-                `🌱 Perfect! All ${total} correct!` :
-                `You got ${correct}/${total}. Green=right, red=wrong!`;
+            feedback.className = 'feedback show';
+            if (correct === total && total > 0) {
+                feedback.className = 'feedback correct show';
+                feedback.textContent = `🌱 Perfect! You got all ${total} correct!`;
+            } else {
+                feedback.className = 'feedback incorrect show';
+                feedback.textContent = `You got ${correct} out of ${total} correct. Green is right, red needs to move!`;
+            }
         }
 
         function resetGenericDragDrop(unitId) {
+            const items = document.querySelectorAll(`#${unitId}-drag-items .drag-item`);
             const container = document.getElementById(`${unitId}-drag-items`);
-            document.querySelectorAll(`#${unitId}-drag-items .drag-item`).forEach(item => {
-                item.style.borderColor = 'var(--lime)';
+            items.forEach(item => {
+                item.style.borderColor = 'var(--green)';
                 container.appendChild(item);
             });
             document.getElementById(`${unitId}-drag-feedback`).className = 'feedback';
         }
 
-        // Drag-drop functions for all 11 units
-        function checkB11DragDrop() { checkGenericDragDrop('b11'); }
-        function resetB11DragDrop() { resetGenericDragDrop('b11'); }
-        function checkB12DragDrop() { checkGenericDragDrop('b12'); }
-        function resetB12DragDrop() { resetGenericDragDrop('b12'); }
-        function checkB13DragDrop() { checkGenericDragDrop('b13'); }
-        function resetB13DragDrop() { resetGenericDragDrop('b13'); }
         function checkB21DragDrop() { checkGenericDragDrop('b21'); }
         function resetB21DragDrop() { resetGenericDragDrop('b21'); }
         function checkB22DragDrop() { checkGenericDragDrop('b22'); }
@@ -2627,22 +1745,82 @@
         function resetB25DragDrop() { resetGenericDragDrop('b25'); }
         function checkB26DragDrop() { checkGenericDragDrop('b26'); }
         function resetB26DragDrop() { resetGenericDragDrop('b26'); }
-        function checkB27DragDrop() { checkGenericDragDrop('b27'); }
-        function resetB27DragDrop() { resetGenericDragDrop('b27'); }
-        function checkB28DragDrop() { checkGenericDragDrop('b28'); }
-        function resetB28DragDrop() { resetGenericDragDrop('b28'); }
 
-        // Fill-in-Blank answers (simplified - all accept common plant-related words)
-        const blankAnswers = {};
-        ['b11','b12','b13','b21','b22','b23','b24','b25','b26','b27','b28'].forEach(unit => {
-            blankAnswers[unit] = {};
-            for(let i=1; i<=10; i++) {
-                blankAnswers[unit][`${unit}-blank${i}`] = [
-                    'food','oxygen','shelter','medicine','wood','energy','nutrients','water','life','survival',
-                    'Food','Oxygen','Shelter','Medicine','Wood','Energy','Nutrients','Water','Life','Survival'
-                ];
+        // Fill-in-Blank Answers
+        const blankAnswers = {
+            b21: {
+                'b21-blank1': ['water', 'Water', 'H2O'],
+                'b21-blank2': ['food', 'Food', 'nutrients'],
+                'b21-blank3': ['air', 'Air', 'oxygen'],
+                'b21-blank4': ['shelter', 'Shelter', 'home'],
+                'b21-blank5': ['survive', 'Survive', 'live'],
+                'b21-blank6': ['energy', 'Energy', 'power'],
+                'b21-blank7': ['healthy', 'Healthy', 'well'],
+                'b21-blank8': ['grow', 'Grow', 'develop'],
+                'b21-blank9': ['living', 'Living', 'alive'],
+                'b21-blank10': ['need', 'Need', 'require']
+            },
+            b22: {
+                'b22-blank1': ['living', 'Living', 'alive'],
+                'b22-blank2': ['grow', 'Grow', 'develop'],
+                'b22-blank3': ['reproduce', 'Reproduce', 'make babies'],
+                'b22-blank4': ['move', 'Move', 'locomote'],
+                'b22-blank5': ['respond', 'Respond', 'react'],
+                'b22-blank6': ['breathe', 'Breathe', 'respire'],
+                'b22-blank7': ['food', 'Food', 'nutrients'],
+                'b22-blank8': ['characteristics', 'Characteristics', 'features'],
+                'b22-blank9': ['cells', 'Cells', 'building blocks'],
+                'b22-blank10': ['alive', 'Alive', 'living']
+            },
+            b23: {
+                'b23-blank1': ['plants', 'Plants', 'vegetation'],
+                'b23-blank2': ['animals', 'Animals', 'creatures'],
+                'b23-blank3': ['photosynthesis', 'Photosynthesis', 'making food'],
+                'b23-blank4': ['sunlight', 'Sunlight', 'sun'],
+                'b23-blank5': ['move', 'Move', 'locomote'],
+                'b23-blank6': ['food', 'Food', 'nutrients'],
+                'b23-blank7': ['roots', 'Roots', 'underground parts'],
+                'b23-blank8': ['leaves', 'Leaves', 'foliage'],
+                'b23-blank9': ['living', 'Living', 'alive'],
+                'b23-blank10': ['different', 'Different', 'distinct']
+            },
+            b24: {
+                'b24-blank1': ['Adaptations', 'adaptations', 'features'],
+                'b24-blank2': ['survive', 'Survive', 'live'],
+                'b24-blank3': ['environment', 'Environment', 'habitat'],
+                'b24-blank4': ['physical', 'Physical', 'body'],
+                'b24-blank5': ['behavioral', 'Behavioral', 'actions'],
+                'b24-blank6': ['camouflage', 'Camouflage', 'hiding'],
+                'b24-blank7': ['hibernation', 'Hibernation', 'winter sleep'],
+                'b24-blank8': ['migration', 'Migration', 'traveling'],
+                'b24-blank9': ['help', 'Help', 'assist'],
+                'b24-blank10': ['special', 'Special', 'unique']
+            },
+            b25: {
+                'b25-blank1': ['Interdependence', 'interdependence', 'dependence'],
+                'b25-blank2': ['depend', 'Depend', 'rely'],
+                'b25-blank3': ['food chain', 'Food chain', 'food web'],
+                'b25-blank4': ['producers', 'Producers', 'plants'],
+                'b25-blank5': ['consumers', 'Consumers', 'animals'],
+                'b25-blank6': ['decomposers', 'Decomposers', 'recyclers'],
+                'b25-blank7': ['ecosystem', 'Ecosystem', 'environment'],
+                'b25-blank8': ['energy', 'Energy', 'power'],
+                'b25-blank9': ['survive', 'Survive', 'live'],
+                'b25-blank10': ['together', 'Together', 'cooperate']
+            },
+            b26: {
+                'b26-blank1': ['Humans', 'humans', 'People'],
+                'b26-blank2': ['impact', 'Impact', 'effect'],
+                'b26-blank3': ['pollution', 'Pollution', 'contamination'],
+                'b26-blank4': ['habitat', 'Habitat', 'home'],
+                'b26-blank5': ['protect', 'Protect', 'save'],
+                'b26-blank6': ['recycle', 'Recycle', 'reuse'],
+                'b26-blank7': ['conservation', 'Conservation', 'protection'],
+                'b26-blank8': ['environment', 'Environment', 'nature'],
+                'b26-blank9': ['positive', 'Positive', 'good'],
+                'b26-blank10': ['negative', 'Negative', 'bad']
             }
-        });
+        };
 
         function checkGenericFillBlanks(unitId) {
             let correct = 0;
@@ -2652,8 +1830,9 @@
             Object.keys(answers).forEach(blankId => {
                 const input = document.getElementById(blankId);
                 const userAnswer = input.value.trim();
+                const correctAnswers = answers[blankId];
                 
-                if (answers[blankId].includes(userAnswer)) {
+                if (correctAnswers.includes(userAnswer)) {
                     input.style.borderColor = '#6BCF7F';
                     input.style.backgroundColor = '#D1FAE5';
                     correct++;
@@ -2665,23 +1844,20 @@
             
             const feedback = document.getElementById(`${unitId}-fillblank-feedback`);
             feedback.className = correct === total ? 'feedback correct show' : 'feedback incorrect show';
-            feedback.textContent = correct === total ? 
-                `🌱 Perfect! All ${total} correct!` :
-                `You got ${correct}/${total}. Green=right, red=wrong!`;
+            
+            if (correct === total) {
+                feedback.textContent = `🌱 Perfect! All ${total} blanks correct!`;
+            } else {
+                feedback.textContent = `You got ${correct} out of ${total} correct. Green is right, red needs fixing!`;
+            }
         }
 
-        // Fill-blank functions for all 11 units
-        function checkB11FillBlanks() { checkGenericFillBlanks('b11'); }
-        function checkB12FillBlanks() { checkGenericFillBlanks('b12'); }
-        function checkB13FillBlanks() { checkGenericFillBlanks('b13'); }
         function checkB21FillBlanks() { checkGenericFillBlanks('b21'); }
         function checkB22FillBlanks() { checkGenericFillBlanks('b22'); }
         function checkB23FillBlanks() { checkGenericFillBlanks('b23'); }
         function checkB24FillBlanks() { checkGenericFillBlanks('b24'); }
         function checkB25FillBlanks() { checkGenericFillBlanks('b25'); }
         function checkB26FillBlanks() { checkGenericFillBlanks('b26'); }
-        function checkB27FillBlanks() { checkGenericFillBlanks('b27'); }
-        function checkB28FillBlanks() { checkGenericFillBlanks('b28'); }
     </script>
 </body>
 </html>
